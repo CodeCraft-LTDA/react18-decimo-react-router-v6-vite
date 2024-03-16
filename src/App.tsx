@@ -4,12 +4,15 @@ import About from "./pages/About";
 import Product from "./pages/Product";
 import Products from "./pages/Products";
 import MainLayout from "./components/MainLayout";
+import NotFoundPage from "./pages/NotFoundPage";
 
 
 const App = () => {
   return (
     <div>
       <Routes>
+        <Route path="*" element={<NotFoundPage />} />
+
         <Route element={<MainLayout/>}> 
           <Route index path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
