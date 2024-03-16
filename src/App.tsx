@@ -1,11 +1,15 @@
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+
+
 const App = () => {
   return (
     <div>
-      <h1>React Router v6</h1>
-      {/* <Routes>
-        <Route path="/" element={<Home />} />
+      <Routes>
+        <Route index path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-      </Routes> */}
+      </Routes>
     </div>
   );
 }
